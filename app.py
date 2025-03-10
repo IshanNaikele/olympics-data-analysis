@@ -14,7 +14,7 @@ st.sidebar.title("Olympics Analysis")
 
 user_menu = st.sidebar.radio(
     'Select an Option',
-    ('Medal Tally','Overall Analysis ','Country Wise Analysis','Athelete Wise Analysis')
+    ('Medal Tally','Overall Analysis ','Country Wise Analysis','Athlete Wise Analysis')
 )
 
 
@@ -156,7 +156,7 @@ if user_menu == 'Country Wise Analysis':
     st.table(x)
         
 if user_menu == 'Athelete Wise Analysis':
-    st.sidebar.title("Athlete Wise Analysis")
+    st.title("Athlete Wise Analysis")
     athletes_data = helper.athletes_data(df)
     
     # Extract age data for different medal categories
